@@ -1,0 +1,14 @@
+*{box-sizing:border-box}body{margin:0;font:14px Tahoma,Arial,sans-serif;height:100vh;display:flex;flex-direction:column;background:#e5e7eb;color:#111}
+button,select,input,textarea{font:inherit}button{padding:5px 10px;border:1px solid #bbb;background:#fff;border-radius:5px;cursor:pointer}button:disabled{opacity:.4}button.pri{background:#2563eb;color:#fff;border-color:#2563eb}
+#top{display:flex;flex-wrap:wrap;gap:6px;align-items:center;padding:6px 10px;background:#1f2937;color:#fff}#status{margin-inline-start:auto;font-size:12px;opacity:.85}
+#main{flex:1;display:flex;min-height:0}aside{background:#f9fafb;overflow:auto;padding:8px}#pal{width:170px}#props{width:290px}
+#stage{flex:1;overflow:auto;padding:16px}#canvas{background:#fff;margin:0 auto;min-height:100%;box-shadow:0 0 0 1px #ccc;transition:width .2s}
+#canvas [data-nid]{cursor:pointer}#canvas div[data-nid],#canvas section[data-nid],#canvas header[data-nid],#canvas footer[data-nid],#canvas nav[data-nid],#canvas form[data-nid]{min-height:28px}
+#canvas main{min-height:600px}#canvas .sel{outline:2px solid #2563eb!important;outline-offset:-2px}#canvas .over{outline:2px dashed #16a34a!important}
+.grp{font-weight:bold;margin:10px 0 4px;color:#555}.it{display:block;width:100%;margin:3px 0;text-align:right}
+.f{display:block;margin:6px 0;font-size:12px}.f input,.f textarea,.f select{width:100%;padding:4px}.cr{display:flex;gap:4px}.cr input[type=color]{width:34px;padding:0}
+.bar{display:flex;flex-wrap:wrap;gap:4px;margin:6px 0}
+#modal{position:fixed;inset:0;background:#0007;display:flex;align-items:center;justify-content:center;z-index:9}#modal[hidden]{display:none}
+.box{background:#fff;width:min(900px,95vw);height:min(640px,90vh);display:flex;flex-direction:column;border-radius:8px;padding:10px}.mh{display:flex;justify-content:space-between;margin-bottom:8px}#mb{flex:1;overflow:auto;display:flex;flex-direction:column;gap:6px}
+#mb iframe{flex:1;border:1px solid #ccc}#mb textarea{flex:1;direction:ltr;font-family:monospace}.row{display:flex;gap:6px;align-items:center;justify-content:space-between;border-bottom:1px solid #eee;padding:4px}
+@media(max-width:800px){#main{flex-direction:column}#pal,#props{width:100%;max-height:30vh}#pal{order:1}#stage{order:2;min-height:40vh}#props{order:3}}
